@@ -12,13 +12,14 @@ const Counter = (props) => {
       <button onClick={props.increment}>+</button>
       <button onClick={props.decrement}>-</button>
       <button onClick={props.reset}>Reset</button>
+
     </div>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.count,
+    counter: state.reducerCounter.count,
   };
 };
 
